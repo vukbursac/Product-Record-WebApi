@@ -88,13 +88,8 @@
         $("#regForm").css("display", "block");
         $("#info").empty();
 
-        $("#sTrad").addClass("hidden");
-        $("#regPrijLogHead").removeClass("hidden");
-        $("#postReg").addClass("hidden");
-        $("#sTrad").addClass("hidden");
-        $("#btnTradicija").css("display", "block");
-
-
+       
+     
         $.getJSON(productsUrl, setProducts);
 
     }
@@ -296,7 +291,7 @@
 
                 //------------------------------------------------------------IF PRODUCT ISN'T SOLD YET THIS IS CODE FOR INPUT AND BUTTON --------------------------------------------
 
-                var displayPrice = "<form id='change-selling-price' class='form-inline'><input class='form-control' type='number'  ; style = 'width: 75px' float: left id='prodajnanova'/><button id ='prodaja' class='btn' style='width: 35px; color: black; background-color: lawngreen; float: right; 'name=" + stringId + ">.</button ></form > "
+                var displayPrice = "<form action='javascript:void(0)' id='change-selling-price' class='form-inline'><input class='form-control' type='number'  ; style = 'width: 75px' float: left id='prodajnanova'/><button id ='prodaja' class='btn' style='width: 35px; color: black; background-color: lawngreen; float: right; 'name=" + stringId + ">.</button ></form > "
                 
 
                 // prikazujemo novi red u tabeli
